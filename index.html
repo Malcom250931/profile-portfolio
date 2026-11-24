@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Malcom Kazuva - Computer Information Systems Student profile page">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malcom Kazuva | Profile</title>
+    <!-- Tailwind (CDN build) used for the header/nav and the contact form -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom mobile-first CSS for everything else -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="page">
+    <header class="bg-gradient-to-br from-blue-600 via-blue-800 to-indigo-900 text-white text-center px-4 pt-8 pb-7 md:pt-12 md:pb-10 rounded-b-3xl shadow-lg">
+        <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight mb-3">Malcom Kazuva</h1>
+        <p class="inline-block rounded-full bg-white/15 ring-1 ring-white/30 px-4 py-1 text-sm md:text-base font-medium tracking-wide">Computer Information Systems Student</p>
+        <nav class="mt-6" aria-label="Main navigation">
+            <ul class="flex flex-col sm:flex-row justify-center items-center gap-2 sm:gap-4 list-none p-0 m-0">
+                <li><a class="block rounded-full bg-white/10 ring-1 ring-white/25 px-5 py-2 text-sm md:text-base font-semibold text-white transition hover:bg-white/25 focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-white" href="#about">About</a></li>
+                <li><a class="block rounded-full bg-white/10 ring-1 ring-white/25 px-5 py-2 text-sm md:text-base font-semibold text-white transition hover:bg-white/25 focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-white" href="#skills">Skills</a></li>
+                <li><a class="block rounded-full bg-white/10 ring-1 ring-white/25 px-5 py-2 text-sm md:text-base font-semibold text-white transition hover:bg-white/25 focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-white" href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <div class="profile-layout">
+                <img class="profile-pic" src="profile.jpg" width="190" height="190" alt="Portrait photo of Malcom Kazuva">
+                <article>
+                    <h2>About Me</h2>
+                    <p>
+                        I am Malcom Kazuva, a Computer Information Systems Student interested in technology,
+                        web development, and computer information systems. I enjoy learning how technology
+                        can be used to solve problems and improve people’s lives.
+                    </p>
+                    <p>
+                        I am passionate about building practical digital solutions, strengthening my
+                        technical skills, and continuing to grow in the field of information technology.
+                    </p>
+                    <a class="btn" href="#contact">Get in touch</a>
+                </article>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Skills &amp; Interests</h2>
+            <ul class="skills" aria-label="Skills and interests">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>Web Design</li>
+                <li>UI/UX</li>
+                <li>Problem Solving</li>
+                <li>Technology</li>
+            </ul>
+        </section>
+
+        <section id="contact" aria-labelledby="contact-heading">
+            <h2 id="contact-heading">Contact Me</h2>
+            <form class="flex flex-col gap-4 max-w-2xl" action="#" method="post">
+                <div class="flex flex-col gap-2">
+                    <label class="font-bold text-gray-900" for="name">Full Name</label>
+                    <input class="w-full rounded-xl border border-slate-300 bg-slate-50 px-4 py-3 text-slate-800 shadow-sm transition focus:border-blue-600 focus:bg-white focus:outline-none focus:ring-4 focus:ring-blue-100"
+                        id="name" name="name" type="text" placeholder="Enter your full name" required minlength="2"
+                        pattern="[A-Za-z\s]+">
+                </div>
+
+                <div class="flex flex-col gap-2">
+                    <label class="font-bold text-gray-900" for="email">Email Address</label>
+                    <input class="w-full rounded-xl border border-slate-300 bg-slate-50 px-4 py-3 text-slate-800 shadow-sm transition focus:border-blue-600 focus:bg-white focus:outline-none focus:ring-4 focus:ring-blue-100"
+                        id="email" name="email" type="email" placeholder="name@example.com" required>
+                </div>
+
+                <div class="flex flex-col gap-2">
+                    <label class="font-bold text-gray-900" for="phone">Phone Number</label>
+                    <input class="w-full rounded-xl border border-slate-300 bg-slate-50 px-4 py-3 text-slate-800 shadow-sm transition focus:border-blue-600 focus:bg-white focus:outline-none focus:ring-4 focus:ring-blue-100"
+                        id="phone" name="phone" type="tel" placeholder="+263 77 123 4567" pattern="[0-9+\s()\-]{10,}" required>
+                </div>
+
+                <div class="flex flex-col gap-2">
+                    <label class="font-bold text-gray-900" for="message">Message</label>
+                    <textarea class="w-full resize-y rounded-xl border border-slate-300 bg-slate-50 px-4 py-3 text-slate-800 shadow-sm transition focus:border-blue-600 focus:bg-white focus:outline-none focus:ring-4 focus:ring-blue-100"
+                        id="message" name="message" rows="5" placeholder="Write your message here" required
+                        minlength="10"></textarea>
+                </div>
+
+                <button class="w-full sm:w-auto sm:self-start cursor-pointer rounded-xl bg-gradient-to-r from-blue-700 to-indigo-700 px-8 py-3 font-bold text-white shadow-md transition hover:from-blue-800 hover:to-indigo-800 hover:shadow-lg focus:outline-none focus:ring-4 focus:ring-blue-200"
+                    type="submit">Send Message</button>
+            </form>
+        </section>
+
+        <aside class="quick-facts" aria-label="Quick facts">
+            <h3>Quick Facts</h3>
+            <ul>
+                <li>Based in the field of Computer Information Systems</li>
+                <li>Interested in website development and digital innovation</li>
+                <li>Enjoys learning and building practical solutions</li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Malcom Kazuva. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
